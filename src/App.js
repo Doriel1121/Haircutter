@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './components/Logo';
 import Login from './components/Login';
+import Homepage from './components/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 import './App.css';
@@ -20,7 +21,7 @@ export default class App extends Component {
     if (this.state.flag == 1) {
       return( 
       <div> 
-        <homepage/>
+        <Homepage/>
       </div>)
     }
   }

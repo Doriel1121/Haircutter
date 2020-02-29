@@ -67,11 +67,11 @@ export default class Login extends Component {
                             <input onChange={this.updatePass} type="password" placeholder="Password"/>
                         </div>
                         <div className="col-7"></div>
-                        <div  id="distance" className="col-4"><button className="btn btn-warning" onClick={this.InfoValidation}> Log-in </button></div>
+                        <div  id="distance" className="col-4"><button className="btn btn-outline-warning" onClick={this.InfoValidation}> Log-in </button></div>
                         <div className="col-1"></div>
 
                         <div className="col-7"></div>
-                        <div className="col-4"><button className="btn btn-warning"> Register </button></div>
+                        <div className="col-4"><button className="btn btn-outline-warning"> Register </button></div>
                         <div className="col-1"></div>
                 </div>
             </div>
