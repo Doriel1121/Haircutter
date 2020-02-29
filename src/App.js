@@ -33,21 +33,15 @@ export default class App extends Component {
       <div className="App">
 
       <Router>
-
-      <Switch>
-
-      <Route exact path="/">
-        {/* <Login/> */}
-      </Route>
-
-      <Route exact path = "/homepage">
-      <Homepage/>
-      </Route>
-
-
-      </Switch>
-
-
+        <Switch>
+          <Route exact path="/">
+            {/* <Login/> */}
+          </Route>
+          
+          <Route exact path = "/homepage">
+          <Homepage/>
+          </Route>
+        </Switch>
       </Router>
 
         <Login flag={this.updateFlag}/>
