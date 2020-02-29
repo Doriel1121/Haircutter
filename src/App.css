@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   /* background-color: rgb(230, 230, 230); */
-  
 }
 
 .logoname{
@@ -22,7 +21,7 @@
 input{
   background-color:transparent;
 border-color: transparent;
-border-bottom-color: green;
+border-bottom-color: orange;
 border-bottom-width: 1px;
 }
 .navbar{

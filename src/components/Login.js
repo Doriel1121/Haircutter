@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logo from './Logo.js';
 import {Link} from 'react-router-dom';
 
+
 export default class Login extends Component {
     constructor(props) {
         super(props)
@@ -54,7 +55,7 @@ export default class Login extends Component {
                         </div>
                         <div className="col-1"></div>
                         <div className="col-9">
-                            <input onChange={this.updateMail} className="logininInput" type="text" placeholder="Your name"/>
+                            <input onChange={this.updateMail} className="logininInput" type="text" placeholder="Your mail"/>
                             <br/> <p id="errormessage"></p>
                         </div>
                
@@ -67,11 +68,11 @@ export default class Login extends Component {
                             <input onChange={this.updatePass} type="password" placeholder="Password"/>
                         </div>
                         <div className="col-7"></div>
-                        <div  id="distance" className="col-4"><button className="btn" onClick={this.InfoValidation}> Log-in </button></div>
+                        <div  id="distance" className="col-4"><button className="btn btn-outline-success" onClick={this.InfoValidation}> Log-in </button></div>
                         <div className="col-1"></div>
 
                         <div className="col-7"></div>
-                        <div className="col-4"><button className="btn"> Register </button></div>
+                        <div className="col-4"><button className="btn btn-outline-success"> Register </button></div>
                         <div className="col-1"></div>
                 </div>
             </div>

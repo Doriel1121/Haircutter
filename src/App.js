@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logo from './components/Logo';
 import Login from './components/Login';
 import Homepage from './components/Homepage';
+import Register from './components/Register';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 import './App.css';
@@ -22,7 +23,7 @@ export default class App extends Component {
     if (this.state.flag == 1) {
       return( 
       <div> 
-        <Homepage/>
+        <Register/>
       </div>)
     }
   }
@@ -30,6 +31,25 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+
+      <Router>
+
+      <Switch>
+
+      <Route exact path="/">
+        {/* <Login/> */}
+      </Route>
+
+      <Route exact path = "/homepage">
+      <Homepage/>
+      </Route>
+
+
+      </Switch>
+
+
+      </Router>
+
         <Login flag={this.updateFlag}/>
         {this.showMe()}
       </div>
