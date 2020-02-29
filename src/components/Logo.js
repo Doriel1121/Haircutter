@@ -16,19 +16,14 @@ printBig=()=>{
 printLittle=()=>{
     return <div>
     <img style={{width:60 }} src="/cut.jpg" alt="pic"/> 
-    <p style={{fontSize:30, fontWeight:"bold", marginTop:0,    display: "inline",position: "relative",
-    bottom: 40,
-    left: 10}}>HabeshaCut</p>
+    <p className="logoname" style={{}}>HabeshaCut</p>
     </div> 
 }
-
-    
     render() {
         if (this.props.variant== "big") {
             return this.printBig()
         }else{
             return this.printLittle()
         }
-       
     }
 }
