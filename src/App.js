@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 import './App.css';
+import Toolbar from './components/Toolbar';
 
 export default class App extends Component {
   constructor(props) {
