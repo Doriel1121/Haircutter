@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Logo from './Logo.js';
 import Toolbar from './Toolbar';
 
-export default class Homepage extends Component {
+export default class HomePage extends Component {
     render() {
         return (
             <div>
