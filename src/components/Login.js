@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './Logo.js';
-import {Link} from 'react-router-dom';
-
+import {Link, Redirect} from 'react-router-dom';
 
 export default class Login extends Component {
     constructor(props) {
@@ -16,7 +15,7 @@ export default class Login extends Component {
              passOk:""
         }
     }
-    
+
     updateMail=(m)=>{
         var mail = m.target.value
         this.state.user.forEach((element)=>{
@@ -43,7 +42,7 @@ export default class Login extends Component {
 
     InfoValidation=()=>{
         if (this.state.mailOk==1 && this.state.passOk==1) {
-            this.props.flag(1)
+           return <Redirect to= "/homepage"/> 
         }
     }
     
@@ -71,11 +70,11 @@ export default class Login extends Component {
                             <input onChange={this.updatePass} type="password" placeholder="Password"/>
                         </div>
                         <div className="col-7"></div>
-                        <div  id="buttonStyle" className="col-4"><button className="btn btn-outline-success" onClick={this.InfoValidation}> Log-in </button></div>
+                        <div  id="buttonStyle" className="col-4"><Link to ="/homepage"><button className="btn btn-outline-success" onClick={this.InfoValidation}> Log-in </button></Link></div>
                         <div className="col-1"></div>
 
                         <div className="col-7"></div>
-                        <div className="col-4"><button className="btn btn-outline-success"> Register </button></div>
+                        <div className="col-4"><Link to ="/register"><button className="btn btn-outline-success"> Register </button></Link></div>
                         <div className="col-1"></div>
                 </div>
             </div>
