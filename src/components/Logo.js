@@ -20,10 +20,10 @@ printLittle=()=>{
     </div> 
 }
     render() {
-        if (this.props.variant== "big") {
-            return this.printBig()
-        }else{
+        if (this.props.variant== "little") {
             return this.printLittle()
+        }else{
+            return this.printBig()
         }
     }
 }
