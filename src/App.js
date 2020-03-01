@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Logo from './components/Logo';
+import './App.css';
 import Login from './components/Login';
+import Regiser from './components/Regiser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
-import './App.css';
-import Toolbar from './components/Toolbar';
 
 export default class App extends Component {
   constructor(props) {
@@ -22,8 +21,8 @@ export default class App extends Component {
           <Route exact path="/">
             <Login/>
           </Route>
-
-          <Route exact path = "/homepage">
+          <Route exact path = "/register">
+            <Regiser/>
           </Route>
         </Switch>
       </Router>

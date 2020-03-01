@@ -49,7 +49,7 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-           <div className="logoposi"> <Logo  variant="big"/></div>
+           <div className="logoPosi"> <Logo  variant="big"/></div>
             <div id="firstrow" className="row">
                         <div className="col-1"></div>
                         <div id="logininfo" className="col-1">
