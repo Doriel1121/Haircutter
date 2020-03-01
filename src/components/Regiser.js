@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import Logo from './Logo.js';
 import {Link,} from 'react-router-dom';
-import Toolbar from './Toolbar.js';
 
 export default class Regiser extends Component {
     render() {
         return (
             <div>
-                <Toolbar/>
                 <div className="logoPosi"><Logo variant="big"/></div>
                 <div className="row">
                     <div className="col-2"></div>
