@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './Logo.js';
-import Toolbar from './Toolbar'
+import Toolbar from './Toolbar';
 
 export default class Homepage extends Component {
     render() {
