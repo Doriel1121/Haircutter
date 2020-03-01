@@ -16,7 +16,7 @@ printBig=()=>{
 printLittle=()=>{
     return <div>
     <img style={{width:60 }} src="/cut.jpg" alt="pic"/> 
-    <p className="logoname">HabeshaCut</p>
+    <p className="logoName">HabeshaCut</p>
     </div> 
 }
     render() {
