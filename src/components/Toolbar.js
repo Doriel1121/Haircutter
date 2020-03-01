@@ -5,9 +5,9 @@ export default class Toolbar extends Component {
     render() {
         return (
             <div>
-                <nav  className="navbar">
-                <Link to ="/homepage"><a className="title" href="#">Home</a></Link>
-                <a className="title" href="#">About</a>
+                <nav className="navbar">
+                <Link to ="/homepage"><p className="title" href="#">Home</p></Link>
+                <p className="title" href="#">About</p>
                 <button className="navbar-toggler" type="button"><span className="toolBarlogout">Log-out</span>
                 </button>
               </nav>
