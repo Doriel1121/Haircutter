@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import LoginPage from './components/LoginPage';
 import RegiserPage from './components/RegiserPage';
-import Homepage from './components/HomePage';
+import HomePage from './components/HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 
@@ -27,7 +27,7 @@ export default class App extends Component {
             <RegiserPage/>
           </Route>
           <Route exact path ="/homepage">
-            <Homepage/>
+            <HomePage/>
           </Route>
         </Switch>
       </Router>
