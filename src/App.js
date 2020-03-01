@@ -11,12 +11,7 @@ export default class App extends Component {
     super(props)
   
     this.state = {
-      //  flag:0
     }
-  }
-
-  updateFlag=(f)=>{
-    this.setState({flag:f})
   }
 
   render() {
