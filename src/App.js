@@ -3,10 +3,9 @@ import './App.css';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import HomePage from './components/HomePage';
+import HistoryPage from './components/HistoryPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
-import HistoryPage from './components/HistoryPage';
-
 
 export default class App extends Component {
   constructor(props) {

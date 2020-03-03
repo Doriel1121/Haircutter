@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import Toolbar from './Toolbar';
-import Logo from './Logo'
+import Logo from './Logo';
+
 export default class HistoryPage extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             userHairCuts:[{date:"12.02.2020", price:50, key:1},
-                {date:"12/02/2020", price:50, key:2},
-                {date:"10/01/2020", price:50, key:3},
-                {date:"20/12/2019", price:40, key:4},
-                {date:"08/10/2019", price:40, key:5},]
+             userHairCuts:[]
         }
+    }
+    componentDidMount(){
+        this.setState({userHairCuts:[{date:"12.022020" , hour: "13:20", price:50, key:1},
+        {date:"12.02.2020", hour: "10:20" ,  price:50, key:2},
+        {date:"10.01.2020", hour: "19:40", price:50, key:3},
+        {date:"20.12.2019", hour: "11:00", price:40, key:4},
+        {date:"08.10.2019", hour: "10:00", price:40, key:5},]
+    })        
     }
     
     render() {
@@ -26,6 +31,9 @@ export default class HistoryPage extends Component {
                         <th className="tableTh">
                             Date
                         </th>
+                        <th>
+                            Hour
+                        </th>
                         <th className="tableTh">
                             Price
                         </th>
@@ -37,6 +45,9 @@ export default class HistoryPage extends Component {
                                     <tr key={element.key}>
                                         <td>
                                             {element.date}
+                                        </td>
+                                        <td>
+                                            {element.hour}
                                         </td>
                                         <td className="insideMap">
                                             {element.price}
