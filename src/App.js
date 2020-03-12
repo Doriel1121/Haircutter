@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import HistoryPage from './components/HistoryPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
+import ReservatioPage from './components/ReservatioPage';
 
 export default class App extends Component {
   constructor(props) {
@@ -31,6 +32,9 @@ export default class App extends Component {
           </Route>
           <Route exact path ="/history">
             <HistoryPage/>
+          </Route>
+          <Route exact path="/reservation">
+            <ReservatioPage/>
           </Route>
         </Switch>
       </Router>
