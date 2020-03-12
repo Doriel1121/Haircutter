@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import LoginPage from './components/LoginPage';
-import RegiserPage from './components/RegiserPage';
+import RegisterPage from './components/RegisterPage';
 import HomePage from './components/HomePage';
+import HistoryPage from './components/HistoryPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
-
 
 export default class App extends Component {
   constructor(props) {
@@ -24,10 +24,13 @@ export default class App extends Component {
             <LoginPage/>
           </Route>
           <Route exact path = "/register">
-            <RegiserPage/>
+            <RegisterPage/>
           </Route>
           <Route exact path ="/homepage">
             <HomePage/>
+          </Route>
+          <Route exact path ="/history">
+            <HistoryPage/>
           </Route>
         </Switch>
       </Router>

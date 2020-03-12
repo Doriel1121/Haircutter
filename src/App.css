@@ -62,3 +62,13 @@ background-color: peru;
 .title{
   margin-bottom: 6px;
 }
+.historyLogo{
+  position: fixed;
+  bottom: 0;
+  left: 100px;
+}
+.historyTitle{
+  margin-bottom: 40px;
+  margin-top: 30px;
+  font-style: oblique;
+}
