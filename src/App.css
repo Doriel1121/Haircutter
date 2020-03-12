@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.row{
+	color: blue;
+	margin-right: 0 !important;
+}
+
 .logoName{
   font-size:30px;
   font-weight: bold;
