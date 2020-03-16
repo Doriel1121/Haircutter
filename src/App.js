@@ -5,6 +5,7 @@ import RegisterPage from './components/RegisterPage';
 import HomePage from './components/HomePage';
 import HistoryPage from './components/HistoryPage';
 import ReservationPage from './components/ReservationPage';
+import AboutPage from './components/AboutPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 
@@ -13,7 +14,12 @@ export default class App extends Component {
     super(props)
   
     this.state = {
+      Name:""
     }
+  }
+
+  updateTheName=(N)=>{
+    this.setState({Name:N})
   }
 
   render() {
@@ -25,7 +31,7 @@ export default class App extends Component {
             <LoginPage/>
           </Route>
           <Route exact path = "/register">
-            <RegisterPage/>
+            <RegisterPage nameOfCritisizer={this.updateTheName}/>
           </Route>
           <Route exact path ="/homepage">
             <HomePage/>
@@ -35,6 +41,9 @@ export default class App extends Component {
           </Route>
           <Route exact path="/reservation">
             <ReservationPage/>
+          </Route>
+          <Route exact path ="/about">
+            <AboutPage name={this.state.Name}/>
           </Route>
         </Switch>
       </Router>

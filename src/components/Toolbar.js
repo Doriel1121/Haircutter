@@ -7,7 +7,7 @@ export default class Toolbar extends Component {
             <div>
                 <nav className="navbar">
                 <Link to ="/homepage"><p className="title" href="#">Home</p></Link>
-                <p className="title" href="#">About</p>
+                <Link to ="/about"><p className="title" href="#">About</p></Link>
                 <p className="title"><Link to ="/"><button className="navbar-toggler" type="button"><span className="toolBarlogout">Log-out</span>
                 </button></Link></p>
               </nav>
