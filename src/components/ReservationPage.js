@@ -20,10 +20,10 @@ export default class ReservatioPage extends Component {
         }
     }
 
-    updateReservationStatus=(status, condition,)=>{
+    updateReservationStatus=(single, newStatus)=>{
         let arr= this.state.haircutDetails
-        let singleTimeZone= status
-        singleTimeZone.status=condition
+        let singleTimeZone= single
+        singleTimeZone.status=newStatus
         for(let i=0 ; i<arr.length; i++){
           if (arr[i].id == singleTimeZone.id) {
               arr[i]=singleTimeZone
@@ -37,7 +37,7 @@ export default class ReservatioPage extends Component {
             <div>
                 <Toolbar/>
                 <div className="container">
-                <h2 className="reserOptions">Reservations</h2>
+                <h2 className="reserOptions">Whenever you want</h2>
                 <div className="tableDiv"><table className="table">
                         <thead className="thead-dark">
                             <tr>

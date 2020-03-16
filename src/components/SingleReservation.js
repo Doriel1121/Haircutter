@@ -3,33 +3,32 @@ import React, { Component } from 'react'
 export default class SingleResrvation extends Component {
 
     updateStatus=()=>{
-        var condition
+        var status
         if (this.props.single.status=== "free") {
-            condition= "cancel"
-            this.props.update(this.props.single,condition )
+            status= "cancel"
         }else if (this.props.single.status === "cancel") {
-            condition= "free"
-            this.props.update(this.props.single,condition )
+            status= "free"
         }
+        this.props.update(this.props.single,status)
     }
 
     render() {
         var backgroundColor;
         if (this.props.single.status === "free") {
-            backgroundColor='green'
+            backgroundColor=' btn btn-success'
         }
         if (this.props.single.status === "taken") {
-            backgroundColor='red'
+            backgroundColor='btn btn-danger'
         }
         if (this.props.single.status === "cancel") {
-            backgroundColor='yellow'
+            backgroundColor='btn btn-warning'
         }
         
         return (
             <tbody>  
                 <tr>
                 <td> {this.props.single.timezone} </td>
-                <td><button className="statusButtonColor" style={{backgroundColor:backgroundColor}} onClick={this.updateStatus}>
+                <td><button className={backgroundColor}  onClick={this.updateStatus}>
                 {this.props.single.status}</button></td>
                 </tr>
             </tbody>

@@ -4,7 +4,7 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import HomePage from './components/HomePage';
 import HistoryPage from './components/HistoryPage';
-import ReservatioPage from './components/ReservatioPage';
+import ReservationPage from './components/ReservationPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 
@@ -34,7 +34,7 @@ export default class App extends Component {
             <HistoryPage/>
           </Route>
           <Route exact path="/reservation">
-            <ReservatioPage/>
+            <ReservationPage/>
           </Route>
         </Switch>
       </Router>

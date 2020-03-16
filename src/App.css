@@ -101,4 +101,10 @@ background-color: rgb(194, 110, 0);
   overflow-y: scroll;
   height: 420px;
 }
+.reserOptions{
+  letter-spacing: -2px;
+}
+.btn{
+  width: 70px;
+}
 
