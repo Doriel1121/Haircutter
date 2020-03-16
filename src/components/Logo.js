@@ -6,17 +6,16 @@ export default class Logo extends Component {
         super(props)
     
     }
-printBig=()=>{
-    
+printBig=()=>{ 
     return <div>
     <img style={{width:120 }} src="/cut.jpg" alt="pic"/> <br/>
-    <p className="logoname" style={{fontSize:30, fontWeight:"bold", marginTop:0}}>HabeshaCut</p>
+    <p className="logoname" style={{fontSize:35, marginTop:0}}><span className="firstLetters">Bar</span><span className="secondLetters">Ber</span><span className="lastLetters">iA</span></p>
     </div>
 }
 printLittle=()=>{
     return <div>
     <img style={{width:60 }} src="/cut.jpg" alt="pic"/> 
-    <p className="logoName">HabeshaCut</p>
+    <p className="logoName"><span className="firstLetters">Bar</span><span className="secondLetters">Ber</span><span className="lastLetters">iA</span></p>
     </div> 
 }
     render() {

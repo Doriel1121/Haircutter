@@ -8,7 +8,6 @@
 
 .logoName{
   font-size:30px;
-  font-weight: bold;
   display:inline;
   position: relative;
   left: 10px;
@@ -48,20 +47,15 @@ border-bottom-width: 1px;
 .loginInput{
   margin-bottom: 10px;
 }
-.HistoryLogoStyle{
-  position: fixed;
-  left: 50px;
-  bottom: 0;
-}
 #homePageHistoryButt{
   margin-top: 15px;
 }
 .rounded-circle{
 width: 100px;
 height: 100px;
-font-weight: 400;
+font-weight: 500;
 font-style: oblique;
-background-color: peru;
+background-color: rgb(194, 110, 0);
 }
 .title{
   margin-bottom: 6px;
@@ -69,10 +63,48 @@ background-color: peru;
 .historyLogo{
   position: fixed;
   bottom: 0;
-  left: 100px;
+  left: 90px;
 }
 .historyTitle{
   margin-bottom: 40px;
   margin-top: 30px;
   font-style: oblique;
 }
+.ResLogoStyle{
+  position: fixed;
+  bottom: 0;
+  left: 90px;
+  
+}
+.reserOptions{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.firstLetters{
+  font-weight: bolder;
+  letter-spacing: -3px;
+}
+.secondLetters{
+  font-weight: 400;
+  letter-spacing: 1;
+}
+.lastLetters{
+  font-weight: lighter;
+  letter-spacing: 6;
+}
+.statusButtonColor{
+  border: transparent;
+  width: 60px;
+  font-weight: bolder;
+}
+.tableDiv{
+  overflow-y: scroll;
+  height: 420px;
+}
+.reserOptions{
+  letter-spacing: -2px;
+}
+.res{
+  width: 70px;
+}
+

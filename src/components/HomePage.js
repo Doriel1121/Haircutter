@@ -11,7 +11,7 @@ export default class HomePage extends Component {
                 <div className="logoPosi"><Logo variant="big"/></div>
                 <div className="row">
                     <div className="col-2"></div>
-                    <div className="col-8"><button className="rounded-circle">Reservation</button></div>
+                    <div className="col-8"><Link to ="/reservation"><button className="rounded-circle">Reservation</button></Link></div>
                     <div className="col-2"></div>
                 </div>
                 <div id="homePageHistoryButt" className="row">

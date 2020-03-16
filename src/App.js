@@ -4,6 +4,7 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import HomePage from './components/HomePage';
 import HistoryPage from './components/HistoryPage';
+import ReservationPage from './components/ReservationPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 
@@ -31,6 +32,9 @@ export default class App extends Component {
           </Route>
           <Route exact path ="/history">
             <HistoryPage/>
+          </Route>
+          <Route exact path="/reservation">
+            <ReservationPage/>
           </Route>
         </Switch>
       </Router>
