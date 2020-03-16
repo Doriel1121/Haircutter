@@ -10,14 +10,11 @@ export default class HomePage extends Component {
                 <Toolbar/>
                 <div className="logoPosi"><Logo variant="big"/></div>
                 <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8"><Link to ="/reservation"><button className="rounded-circle">Reservation</button></Link></div>
-                    <div className="col-2"></div>
+                    <div className="col-12"><Link to ="/reservation"><button className="btn-lg btn-block">Reservation</button></Link></div>
+
                 </div>
                 <div id="homePageHistoryButt" className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8"><Link to ="/history"><button className="rounded-circle">History</button></Link></div>
-                    <div className="col-2"></div>
+                    <div className="col-12"><Link to ="/history"><button className="btn-lg btn-block">History</button></Link></div>
                 </div>
             </div>
         )

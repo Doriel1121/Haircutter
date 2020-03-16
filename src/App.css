@@ -27,13 +27,16 @@ border-bottom-color: orange;
 border-bottom-width: 1px;
 }
 .navbar{
-  background-color: orange;
+  background-color: rgb(128, 26, 15);
 }
 .toolBarlogout{
-  color: red;
+  color: black;
   font-size: 15px;
+  font-weight: bolder;
+  
 }
 .title{
+  font-family: serif;
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -50,13 +53,24 @@ border-bottom-width: 1px;
 #homePageHistoryButt{
   margin-top: 15px;
 }
-.rounded-circle{
+.btn-lg{
+  padding-right: 0;
+  background-image: linear-gradient(to right, rgba(138, 138, 138, 0.63) ,rgb(128, 26, 15), rgb(128, 26, 15),rgb(128, 26, 15),rgb(128, 26, 15),rgba(138, 138, 138, 0.63));
+  border: transparent;
+  height: 80px;
+  font-family: serif;
+  font-weight: bolder;
+  font-size: 90px;
+  color: white;
+  letter-spacing: 3px;
+}
+/* .rounded-circle{
 width: 100px;
 height: 100px;
 font-weight: 500;
 font-style: oblique;
 background-color: rgb(194, 110, 0);
-}
+} */
 .title{
   margin-bottom: 6px;
 }
@@ -114,10 +128,23 @@ background-color: rgb(194, 110, 0);
 }
 .criticize{
   text-align: center;
-  border: 1px solid green;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
   margin-bottom: 3px;
-  border-radius: 3px;
   margin-top: 5px;
+}
+.barberWords{
+  font-size: 14px;
+}
+.dateOfCritic{
+  text-align: right;
+  margin-bottom: 0px;
+}
+.criticize{
+  text-align: left;
+}
+.criticName{
+  font-weight: 800;
 }
 
 
