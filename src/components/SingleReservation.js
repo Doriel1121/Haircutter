@@ -8,6 +8,8 @@ export default class SingleResrvation extends Component {
             status= "cancel"
         }else if (this.props.single.status === "cancel") {
             status= "free"
+        }else if (this.props.single.status === "taken") {
+            status="taken"
         }
         this.props.update(this.props.single,status)
     }
@@ -15,13 +17,13 @@ export default class SingleResrvation extends Component {
     render() {
         var backgroundColor;
         if (this.props.single.status === "free") {
-            backgroundColor=' btn btn-success'
+            backgroundColor='res btn btn-success'
         }
         if (this.props.single.status === "taken") {
-            backgroundColor='btn btn-danger'
+            backgroundColor='res btn btn-danger'
         }
         if (this.props.single.status === "cancel") {
-            backgroundColor='btn btn-warning'
+            backgroundColor='res btn btn-warning'
         }
         
         return (
