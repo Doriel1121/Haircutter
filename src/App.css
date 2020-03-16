@@ -8,7 +8,6 @@
 
 .logoName{
   font-size:30px;
-  /* font-weight: bold; */
   display:inline;
   position: relative;
   left: 10px;
@@ -75,6 +74,7 @@ background-color: rgb(194, 110, 0);
   position: fixed;
   bottom: 0;
   left: 90px;
+  
 }
 .reserOptions{
   margin-top: 20px;
@@ -94,10 +94,11 @@ background-color: rgb(194, 110, 0);
 }
 .statusButtonColor{
   border: transparent;
-  width: 60px;font-weight: bolder;
+  width: 60px;
+  font-weight: bolder;
 }
 .tableDiv{
   overflow-y: scroll;
-  height: 400px;
+  height: 420px;
 }
 

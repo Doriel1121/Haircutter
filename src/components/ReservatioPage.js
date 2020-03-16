@@ -8,22 +8,22 @@ export default class ReservatioPage extends Component {
         super(props)
     
         this.state = {
-             haircutDetails:[{ id:1,timezone:"11:00 - 11:20", status:"free",color:"green"},
-             {id:2,timezone:"11:20 - 11:40", status:"free",color:"green"},
-             {id:3,timezone:"11:40 - 12:00", status:"taken",color:"red"},
-             {id:4,timezone:"12:00 - 12:20", status:"free",color:"green"},
-             {id:5,timezone:"12:20 - 12:40", status:"cancel",color:"yellow"},
-             {id:6,timezone:"12:40 - 13:00", status:"free",color:"green"},
-             {id:7,timezone:"13:00 - 13:20", status:"free",color:"green"},
-             ]
+             haircutDetails:[{ id:1,timezone:"11:00 - 11:20", status:"free"},
+             {id:2,timezone:"11:20 - 11:40", status:"free"},
+             {id:3,timezone:"11:40 - 12:00", status:"taken"},
+             {id:4,timezone:"12:00 - 12:20", status:"free"},
+             {id:5,timezone:"12:20 - 12:40", status:"cancel"},
+             {id:6,timezone:"12:40 - 13:00", status:"free"},
+             {id:7,timezone:"13:00 - 13:20", status:"free"},
+             ],
+             Days:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         }
     }
 
-    updateResStatus=(status, condition,color)=>{
+    updateReservationStatus=(status, condition,)=>{
         let arr= this.state.haircutDetails
         let singleTimeZone= status
         singleTimeZone.status=condition
-        singleTimeZone.color=color
         for(let i=0 ; i<arr.length; i++){
           if (arr[i].id == singleTimeZone.id) {
               arr[i]=singleTimeZone
@@ -41,7 +41,7 @@ export default class ReservatioPage extends Component {
                 <div className="tableDiv"><table className="table">
                         <thead className="thead-dark">
                             <tr>
-                          <th colSpan="2"> Sunday </th>  
+                          <th colSpan="2"> {this.state.Days[2]} </th>  
                           </tr>
                         </thead>
                         <tbody>
@@ -51,7 +51,7 @@ export default class ReservatioPage extends Component {
                             </tr>
                         </tbody>
                 {this.state.haircutDetails.map((element,key)=>{
-                    return <SingleReservation key={element.id} update={this.updateResStatus} single={element}/>  
+                    return <SingleReservation key={element.id} update={this.updateReservationStatus} single={element}/>  
                 })}
                 </table>
                 </div>
