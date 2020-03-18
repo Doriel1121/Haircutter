@@ -23,7 +23,7 @@ export default class AboutPage extends Component {
                 <div className="card mb-3" style={{maxWidth: 540}}>
                     <div className="row no-gutters">
                       <div className="col-md-4">
-                        <img src="..." class="card-img" alt="..."/>
+                        <img style={{width:90, borderRadius:50}} src="/od.jpg" class="card-img" alt="..."/>
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
