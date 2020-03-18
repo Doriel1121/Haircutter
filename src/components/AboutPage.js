@@ -18,17 +18,31 @@ export default class AboutPage extends Component {
         return (
             <div>
                 <Toolbar/>
-                <h2>My Space</h2><br/>
-                <div><h3>{this.state.About.Name}</h3><br/>
-                <span style={{fontWeight:"bold"}}>Address: </span>{this.state.About.Location}<br/>
-                <p className="barberWords">{this.state.About.MyWords}</p>
-                </div>
+                
+                <div>
+                <div className="card mb-3" style={{maxWidth: 540}}>
+                    <div className="row no-gutters">
+                      <div className="col-md-4">
+                        <img src="..." class="card-img" alt="..."/>
+                      </div>
+                      <div className="col-md-8">
+                        <div className="card-body">
+                        <h3>{this.state.About.Name}</h3>
+                        <span style={{fontWeight:"bold"}}>Address: </span>{this.state.About.Location}
+                          <h5 className="card-title">My Space</h5>
+                          <p className="card-text">{this.state.About.MyWords}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
 
                 {this.state.Criticizes.map((element)=>{
-                    return <div className="criticize">
+                    return <div style={{height:100}} className="criticize">
                         <span className="criticName">{element.Name}</span> <br/>
                         {element.text}<br/> <p className="dateOfCritic">{element.date} </p>
                     </div>
+                    
                 })}
 
 
