@@ -18,7 +18,7 @@ export default class AboutPage extends Component {
         return (
             <div>
                 <Toolbar/>
-                    <div style={{backgroundColor:"white"}} className="row no-gutters">
+                    <div style={{backgroundColor:"white", paddingTop: "50px"}} className="row no-gutters">
                       <div className="col-md-4">
                           <div className="container">
                           <div className="row">

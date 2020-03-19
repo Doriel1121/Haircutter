@@ -28,6 +28,9 @@ border-bottom-width: 1px;
 }
 .navbar{
   background-color: orangered;
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
 }
 .toolBarlogout{
   color: black;
