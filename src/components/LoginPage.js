@@ -62,7 +62,7 @@ export default class Login extends Component {
                         </div>
                
                         <div className="col-1"></div>
-                        <div id="loginInput" className="col-1">
+                        <div id="login" className="col-1">
                             <p>Password</p>
                         </div>
                         <div className="col-1"></div>
@@ -70,7 +70,7 @@ export default class Login extends Component {
                             <input onChange={this.updatePass} type="password" placeholder="Password"/>
                         </div>
                         <div className="col-7"></div>
-                        <div  id="buttonStyle" className="col-4"><Link to ="/homepage"><button className="btn btn-outline-success" onClick={this.InfoValidation}> Log-in </button></Link></div>
+                        <div  id="buttonStyle" className="col-4"><Link to ="/homepage"><button className="btn btn-success" onClick={this.InfoValidation}> Log-in </button></Link></div>
                         <div className="col-1"></div>
 
                         <div className="col-7"></div>

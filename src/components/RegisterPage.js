@@ -3,6 +3,12 @@ import Logo from './Logo.js';
 import {Link,} from 'react-router-dom';
 
 export default class Regiser extends Component {
+
+    fullName=(n)=>{
+       let name=n.target.value
+        this.props.nameOfCritisizer(name)
+    }
+
     render() {
         return (
             <div>
@@ -10,7 +16,7 @@ export default class Regiser extends Component {
                 <div className="row">
                     <div className="col-2"></div>
                         <div className="col-8">
-                            <input className="loginInput" type="text" placeholder="Full name"/></div>
+                            <input onChange={this.fullName} className="loginInput" type="text" placeholder="Full name"/></div>
                         <div className="col-2"></div>
                         
                         <div className="col-2"></div>
