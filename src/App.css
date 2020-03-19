@@ -137,5 +137,13 @@ border-bottom-width: 1px;
 .criticName{
   font-weight: 800;
 }
+.nameTitle{
+  position: absolute;
+  left: 30%;
+  top: 40%;
+}
+.con{
+  height: 0px;
+}
 
 
