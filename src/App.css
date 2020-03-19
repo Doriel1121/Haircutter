@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#root{
+  padding-top: 35px;
+}
+
 .row{
 	margin-right: 0 !important; 
 }
@@ -31,6 +35,7 @@ border-bottom-width: 1px;
   position: fixed !important;
   width: 100%;
   z-index: 1;
+  top: 0px;
 }
 .toolBarlogout{
   color: black;
