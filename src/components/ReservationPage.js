@@ -25,7 +25,7 @@ export default class ReservatioPage extends Component {
         let singleTimeZone= single
         singleTimeZone.status=newStatus
         for(let i=0 ; i<arr.length; i++){
-          if (arr[i].id == singleTimeZone.id) {
+          if (arr[i].id === singleTimeZone.id) {
               arr[i]=singleTimeZone
               this.setState({haircutDetails:arr})
           }  

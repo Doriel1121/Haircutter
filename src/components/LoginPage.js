@@ -32,7 +32,7 @@ export default class Login extends Component {
     updatePass=(p)=>{
         var pass =p.target.value
         this.state.user.forEach((element)=>{
-            if (this.state.mail == element.mail && pass == element.password) {
+            if (this.state.mail === element.mail && pass === element.password) {
                 this.setState({password:pass})
                 this.setState({passOk:1})
                 return true
@@ -41,7 +41,7 @@ export default class Login extends Component {
     }
 
     InfoValidation=()=>{
-        if (this.state.mailOk==1 && this.state.passOk==1) {
+        if (this.state.mailOk===1 && this.state.passOk===1) {
            return <Redirect to= "/homepage"/> 
         }
     }

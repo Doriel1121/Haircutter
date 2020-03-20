@@ -52,7 +52,7 @@ export default class App extends Component {
         </Router>
         </div>
       )
-    }else{return <div className="App">Please change to mobile state </div>}
+    }else{return <div className="App">Please change to mobile state and refresh  </div>}
     
   }
 }

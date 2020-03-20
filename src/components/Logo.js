@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 // import './HairLogo.png';
 
 export default class Logo extends Component {
-    constructor(props) {
-        super(props)
-    
-    }
+
 printBig=()=>{ 
     return <div>
     <img style={{width:120 }} src="/cut.jpg" alt="pic"/> <br/>
@@ -19,7 +16,7 @@ printLittle=()=>{
     </div> 
 }
     render() {
-        if (this.props.variant== "little") {
+        if (this.props.variant === "little") {
             return this.printLittle()
         }else{
             return this.printBig()
