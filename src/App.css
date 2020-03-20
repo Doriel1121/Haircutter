@@ -74,9 +74,10 @@ border-bottom-width: 1px;
 }
 
 .historyLogo{
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 90px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .historyTitle{
   margin-bottom: 40px;
@@ -84,9 +85,10 @@ border-bottom-width: 1px;
   font-style: oblique;
 }
 .ResLogoStyle{
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 90px;
+  left: 50%;
+  transform: translateX(-50%);
   
 }
 .reserOptions{
@@ -121,9 +123,10 @@ border-bottom-width: 1px;
   width: 70px;
 }
 .AboutLogo{
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 90px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .criticize{
   text-align: center;
